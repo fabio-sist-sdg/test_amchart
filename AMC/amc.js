@@ -1,7 +1,7 @@
 ! function() {
     let t = document.createElement("template");
     t.innerHTML = "<div id = chartdiv width=100% height=500px></div>";
-    customElements.define("com-sdg-ws", class extends HTMLElement {
+    customElements.define("com-sdg-amc", class extends HTMLElement {
         constructor() {
             super();
 			let shadowRoot = this.attachShadow({mode: "open"});
