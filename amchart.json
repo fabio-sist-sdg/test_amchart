@@ -1,0 +1,43 @@
+{
+	"id": "com.sdg.amc",
+	"version": "1.0.0",
+	"name": "amChart Pie",
+	"description": "amChart Pie",
+	"newInstancePrefix": "AMC",
+	"icon": "https://fabio-sist-sdg.github.io/test_amc/AMC/icon.png",
+	"vendor": "SDG Group",
+	"eula": "EULA",
+	"license": "1.0",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sdg-amc",
+			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-sdg-amc-sps",
+			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc_sps.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-sdg-amc-bps",
+			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc_bps.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+	},
+	"methods": {	
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the amc."
+		}
+	}
+}
