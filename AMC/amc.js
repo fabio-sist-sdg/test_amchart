@@ -71,7 +71,10 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
 			this._props = { ...this._props, ...changedProperties };
 		}
         onCustomWidgetAfterUpdate(changedProperties) {
-			am4core.ready(function() {
+			 am4core.ready();
+        }
+		
+		am4core.ready(function() {
 
 // Themes begin
 am4core.useTheme(am4themes_kelly);
@@ -320,7 +323,6 @@ series1.events.on("datavalidated", function () {
     dummyDataItem.slice.tooltipText = undefined;
 })
 
-}); // end am4core.ready()
-        }
+});
     })
 }();
