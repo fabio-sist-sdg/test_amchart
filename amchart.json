@@ -4,7 +4,7 @@
 	"name": "amChart Pie",
 	"description": "amChart Pie",
 	"newInstancePrefix": "AMC",
-	"icon": "https://fabio-sist-sdg.github.io/test_amc/AMC/icon.png",
+	"icon": "https://fabio-sist-sdg.github.io/test_amchart/AMC/icon.png",
 	"vendor": "SDG Group",
 	"eula": "EULA",
 	"license": "1.0",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-sdg-amc",
-			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc.js",
+			"url": "https://fabio-sist-sdg.github.io/test_amchart/AMC/amc.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-sdg-amc-sps",
-			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc_sps.js",
+			"url": "https://fabio-sist-sdg.github.io/test_amchart/AMC/amc_sps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-sdg-amc-bps",
-			"url": "https://fabio-sist-sdg.github.io/test_amc/AMC/amc_bps.js",
+			"url": "https://fabio-sist-sdg.github.io/test_amchart/AMC/amc_bps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
