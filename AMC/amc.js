@@ -28,40 +28,10 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
 
 ! function() {
     let t = document.createElement("template");
-    t.innerHTML = "<div id = chartdiv width=100% height=500px></div>";
+    t.innerHTML = "<div id = chartdiv></div>";
     customElements.define("com-sdg-amc", class extends HTMLElement {
         constructor() {
             super();
-			/*
-			function foo(){
-				
-			}
-			let shadowRoot = this.attachShadow({mode: "open"});
-			shadowRoot.appendChild(t.content.cloneNode(true));
-			const script1 = document.createElement('script');
-			script1.type = 'text/javascript';
-			script1.src = 'https://www.amcharts.com/lib/4/core.js';
-			script1.addEventListener("load", foo());
-			shadowRoot.appendChild(script1);
-			
-			const script2 = document.createElement('script');
-			script2.type = 'text/javascript';
-			script2.src = 'https://www.amcharts.com/lib/4/charts.js';
-			script2.addEventListener("load", foo());
-			shadowRoot.appendChild(script2);
-			
-			const script3 = document.createElement('script');
-			script3.type = 'text/javascript';
-			script3.src = 'https://www.amcharts.com/lib/4/themes/kelly.js';
-			script3.addEventListener("load", foo());
-			shadowRoot.appendChild(script3);
-			
-			const script4 = document.createElement('script');
-			script4.type = 'text/javascript';
-			script4.src = 'https://www.amcharts.com/lib/4/themes/animated.js';
-			script4.addEventListener("load", foo());
-			shadowRoot.appendChild(script4);
-			*/
 			this.addEventListener("click", t => {
                 t = new Event("onClick"), this.dispatchEvent(t)
             });
