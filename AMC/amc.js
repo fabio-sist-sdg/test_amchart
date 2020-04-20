@@ -1,6 +1,6 @@
 ! function() {
     let t = document.createElement("template");
-    t.innerHTML = "<div id = chartdiv></div>";
+    t.innerHTML = "<div id = chartdiv width=100% height=500px></div>";
     customElements.define("com-sdg-ws", class extends HTMLElement {
         constructor() {
             super();
@@ -14,19 +14,19 @@
 			
 			const script2 = document.createElement('script');
 			script2.type = 'text/javascript';
-			script2.src = 'https://www.amcharts.com/lib/4/core.js';
+			script2.src = 'https://www.amcharts.com/lib/4/charts.js';
 			script2.addEventListener("load", callback);
 			shadowRoot.appendChild(script2);
 			
 			const script3 = document.createElement('script');
 			script3.type = 'text/javascript';
-			script3.src = 'https://www.amcharts.com/lib/4/core.js';
+			script3.src = 'https://www.amcharts.com/lib/4/themes/kelly.js';
 			script3.addEventListener("load", callback);
 			shadowRoot.appendChild(script3);
 			
 			const script4 = document.createElement('script');
 			script4.type = 'text/javascript';
-			script4.src = 'https://www.amcharts.com/lib/4/core.js';
+			script4.src = 'https://www.amcharts.com/lib/4/themes/animated.js';
 			script4.addEventListener("load", callback);
 			shadowRoot.appendChild(script4);
 			
