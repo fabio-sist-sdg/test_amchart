@@ -28,7 +28,16 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
 
 ! function() {
     let t = document.createElement("template");
-    t.innerHTML = "<div id = chartdiv></div>";
+    t.innerHTML = `
+	<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+</style>
+<div id = "chartdiv">
+</div>
+`;
     customElements.define("com-sdg-amc", class extends HTMLElement {
         constructor() {
             super();
