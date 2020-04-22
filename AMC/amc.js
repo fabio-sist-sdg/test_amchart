@@ -51,6 +51,8 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
 		}
         onCustomWidgetAfterUpdate(changedProperties) {
 			
+			var ctx = this.shadowRoot.getElementById('chart_div');
+			
 			am4core.ready(function() {
 			 am4core.useTheme(am4themes_kelly);
 am4core.useTheme(am4themes_animated);
@@ -85,7 +87,7 @@ var data = [{
 
 
 // cointainer to hold both charts
-var container = am4core.create("chartdiv", am4core.Container);
+var container = am4core.create(ctx, am4core.Container);
 container.width = am4core.percent(100);
 container.height = am4core.percent(100);
 container.layout = "horizontal";
