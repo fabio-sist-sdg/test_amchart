@@ -41,17 +41,25 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
     customElements.define("com-sdg-amc", class extends HTMLElement {
         constructor() {
             super();
-			this.addEventListener("click", t => {
-                t = new Event("onClick"), this.dispatchEvent(t)
-            });
+			let shadowRoot = this.attachShadow({mode: "open"});
+			shadowRoot.appendChild(template.content.cloneNode(true));
+			this.addEventListener("click", event => {
+				var event = new Event("onClick");
+				this.dispatchEvent(event);
+			});
 			this._props = {};
         }
+		connectedCallback(){
+		}
         onCustomWidgetBeforeUpdate(changedProperties) {
 			this._props = { ...this._props, ...changedProperties };
 		}
         onCustomWidgetAfterUpdate(changedProperties) {
-			
-			var ctx = this.shadowRoot.getElementById('chart_div');
+			console.log("onCustomWidgetAfterUpdate")
+			console.log("this._props prop = ", this._props);
+			this._props = { ...this._props, ...changedProperties };
+
+			var ctx = this.shadowRoot.getElementById('chartdiv');
 			
 			am4core.ready(function() {
 			 am4core.useTheme(am4themes_kelly);
