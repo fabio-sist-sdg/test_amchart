@@ -42,7 +42,7 @@ am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defi
         constructor() {
             super();
 			let shadowRoot = this.attachShadow({mode: "open"});
-			shadowRoot.appendChild(template.content.cloneNode(true));
+			shadowRoot.appendChild(t.content.cloneNode(true));
 			this.addEventListener("click", event => {
 				var event = new Event("onClick");
 				this.dispatchEvent(event);
